@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <title>Who is the best in typing?</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" href="https://www.seekpng.com/png/full/282-2821473_submit-event-keyboard-typing-icon-png.png">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">Are you the type master?</div>
+    <div class="header">
+      <div class="wpm">
+        <div class="headerText">WPM</div>
+        <div class="currWpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="headerText">CPM</div>
+        <div class="currCpm">100</div>
+      </div>
+      <div class="best">
+        <div class="headerText">Best WPM:</div>
+        <div class="currBest">N/A</div>
+      </div>
+      <div class="timer">
+        <div class="headerText">Time:</div>
+        <div class="currTime">30s</div>
+      </div>
+      <div class="user">
+        <div class="headerText">User:</div>
+        <div class="currUser">Guest</div>
+      </div>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <textarea class="inputArea" placeholder="start typing here..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <button class="restartBtn" onclick="resetValues()">Restart</button>
+    <div class="joke"></div>
+    
+  <script src="/script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
