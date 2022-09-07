@@ -1,5 +1,5 @@
 # type-master.github.io
 
-** Type Master **
+### Type Master
 
 This is Typing test platform.  
